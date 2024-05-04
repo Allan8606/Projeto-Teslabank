@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    max-width: 1070px;
+    margin: auto;
+}
+
+/* ----- HEADER - CABEÇALHO----- */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #eb3850;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a191e;
+
+    padding: 8px 10px;
+
+    text-decoration: none;
+}
+.nav-link:hover {
+    background-color: #eee9e9;
+    border-radius: 3px;
+}
+
+header div {
+    display: flex;
+    gap: 20px;
+}
+header div a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 16px;
+    border-radius: 3px;
+}
+.header-entrar {
+    color: #eb3850;
+}
+.header-entrar:hover {
+    background-color: #dfdddd;
+
+    transition: 1s;
+}
+.header-abrirConta {
+    background-color: #eb3850;
+    color: #ffffff;
+}
+.header-abrirConta:hover {
+    background-color: #fa6679;
+
+    transition: 1s;
+}
+
+/* ----------- CONTEUDO PRINCIPAL -- MAN ------ */
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+
+    margin-top: 150px;
+}
+.container-man p,
+.caixa-marcacoes span,
+.botao-man a,
+.abra-suaConta p,
+.vantagens-conta p {
+    font-family: "Inter", sans-serif;
+}
+
+.container-man h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 63px;
+    font-weight: 600;
+}
+.container-man p {
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+.marcacoes {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa-marcacoes {
+    display: flex;
+    align-items: center;
+}
+.caixa-marcacoes span {
+    font-size: 15px;
+
+    margin-left: 4px;
+}
+
+.botao-man {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    padding-top: 80px;
+}
+@keyframes btn-man {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.botao-man a {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 500;
+
+    background-color: #eb3850;
+    color: #ffffff;
+
+    padding: 16px 40px;
+    border-radius: 3px;
+    animation: btn-man 1.5s linear 1;
+}
+.botao-man a:hover {
+    background-color: #fa6679;
+    transition: 1.5s;
+}
+
+.img-man img {
+    width: 295px;
+}
+
+/* ------ SECTION ABRA SUA CONTA---- */
+.abra-suaConta {
+    padding-top: 200px;
+
+    display: flex;
+    gap: 150px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+.img-app {
+    width: 380px;
+}
+.img-icones {
+    width: 68px;
+}
+
+.img-marcacao-fixado {
+    position: absolute;
+    top: 290px;
+    left: -50px;
+
+    animation: marcacao 2.5s linear infinite;
+}
+@keyframes marcacao {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.img-coracao-fixado {
+    position: absolute;
+    top: 730px;
+    left: -28px;
+
+    animation: marcacao 2s linear infinite;
+}
+.img-seta-fixado {
+    position: absolute;
+    top: 550px;
+    left: 350px;
+
+    animation: marcacao 2.2s linear infinite;
+}
+
+.txt-abraSuaConta h1 {
+    font-size: 42px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+.txt-abraSuaConta span {
+    color: #eb3850;
+    font-size: 55px;
+    font-weight: 600;
+}
+.abra-suaConta p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vantagens-conta {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+    padding-top: 60px;
+}
+.vantagens-conta h2 {
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+.vantagens-conta p {
+    font-size: 15px;
+    padding-top: 3px;
+}
